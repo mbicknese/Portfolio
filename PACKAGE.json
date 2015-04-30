@@ -1,0 +1,12 @@
+{
+  "name": "@MBicknese/Portfolio",
+  "version": "0.1.0",
+  "description": "Portfolio website for Maarten Bicknese. Showcasing both his design and programming skills.",
+  "repository": "https://mbicknese@github.com/mbicknese/Portfolio.git",
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  }
+}
