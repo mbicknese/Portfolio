@@ -1,5 +1,7 @@
-# Netbeans
+# Editors / IDEs
 nbproject/
+*.sublime-project
+*.sublime-workspace
 
 
 # Logs and databases
@@ -22,9 +24,11 @@ desktop.ini
 # Structure
 /node_modules
 /test/vendor
+/public_html/.htaccess
 /public_html/vendor
 /public_html/*.css
 /public_html/*.css.map
+/api/config/99-*
 
 ## Composer
 /composer.lock

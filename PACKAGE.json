@@ -2,9 +2,15 @@
   "name": "@MBicknese/Portfolio",
   "version": "0.1.0",
   "description": "Portfolio website for Maarten Bicknese. Showcasing both his design and programming skills.",
-  "repository": "https://mbicknese@github.com/mbicknese/Portfolio.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbicknese/Pportfolio"
+  },
   "dependencies": {},
   "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^1.3.3"
   },
   "engines": {
     "node": ">=0.12.0"

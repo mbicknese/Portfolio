@@ -1,0 +1,20 @@
+{
+    "name": "MBicknese/Portfolio",
+    "description": "Portfolio van Maarten Bicknese.",
+    "require": {
+        "symfony/http-kernel": "^2.6",
+        "doctrine/orm": "^2.5"
+    },
+    "license": "GPL v2",
+    "authors": [
+        {
+            "name": "Maarten Bicknese",
+            "email": "Maarten@Bicknese.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MBicknese\\Portfolio\\": "api/src/"
+        }
+    }
+}

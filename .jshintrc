@@ -1,0 +1,17 @@
+{
+    "maxerr"    : 10,
+
+    "browser"   : true,
+    "globals"   : {
+        "angular" : true 
+    },
+
+    "strict"    : true,
+    "asi"       : true,
+    "eqeqeq"    : true,
+    "loopfunc"  : false,
+    "undef"     : true,
+    "white"     : true,
+
+    "indent"    : 4
+}

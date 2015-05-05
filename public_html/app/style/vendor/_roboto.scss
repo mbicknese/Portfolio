@@ -1,0 +1,7 @@
+$roboto-font-path: "vendor/roboto-fontface/fonts";
+
+@import "../../../vendor/roboto-fontface/roboto-fontface.scss";
+
+body {
+    font-family: 'Roboto', "Helvetica Neue", Arial, Helvetica, sans-serif;
+}

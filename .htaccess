@@ -1,0 +1,11 @@
+# Using mod_rewrite we can redirect fancy HTTP requests like GET /user/2 to
+# retrieve data for user with id 2 and keep it readable for the developers.
+# Please add these lines to your Apache2 config instead of copying the htaccess
+# to your public_html folder. This should keep the Apache2 overhead to a minimum
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)$ api.php [QSA,L]
+</IfModule>
