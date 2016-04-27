@@ -1,0 +1,38 @@
+# IDE
+nbproject/
+*.sublime-project
+*.sublime-workspace
+org.eclipse.*
+
+
+
+# Logs and databases
+*.log
+*.sqlite
+
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+*~
+*.orig
+*.bak
+
+
+# Package management
+composer.lock
+/vendor/
+node_modules/
+.tmp
+.sass-cache
+/test/vendor
+
+
+# Project specific
+
