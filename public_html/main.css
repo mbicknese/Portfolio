@@ -11,6 +11,39 @@ h1 {
 }
 p {
 	color: #555;
-	font-size: 1vw;
-	font-weight: 300;
+	font-size: 2vw;
+	font-weight: 100;
+}
+
+main h2 {
+	border: 1px solid #999;
+	border-radius: 7vw;
+	width: 7vw;
+	height: 7vw;
+	margin: 0 auto;
+	font-size: 4vw;
+	font-weight: 100;
+	line-height: 7vw;
+	color: #555;
+	margin-top: 5vw;
+	margin-bottom: 0;
+}
+main section.finished h2 {
+	border-color: #9d9;
+}
+main section.finished p:before {
+	content: "✓";
+	color: #9d9;
+}
+
+main section.pending h2 {
+	color: #999;
+	border-color: #bbb;
+}
+main section.pending p {
+	color: #999;
+}
+
+main h2 + p {
+	margin-top: 0;
 }
