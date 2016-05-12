@@ -1,6 +1,16 @@
-h1 {
+body {
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, p, a {
 	text-align: center;
+}
+h1 {
 	color: #333;
 	font-size: 6vw;
 	font-weight: 100;
+}
+p {
+	color: #555;
+	font-size: 1vw;
+	font-weight: 300;
 }
