@@ -7,12 +7,12 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, original } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} canonicalURL={original} />
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -51,6 +51,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+			.canonical {
+				font-style: italic;
+				font-size: 1rem;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
 		</style>
 	</head>
 
@@ -74,6 +81,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							}
 						</div>
 						<h1>{title}</h1>
+						{
+							original && (
+								<p class="canonical">Originally published at: <a href={original}>{original}</a></p>
+							)
+						}
 						<hr />
 					</div>
 					<slot />
