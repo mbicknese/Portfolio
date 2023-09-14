@@ -75,7 +75,7 @@ function createSignal(initialValue) {
   let value = initialValue;
   const getter = () => value;
   const setter = (newValue) => {
-\tvalue = newValue;
+    value = newValue;
   };
   return [getter, setter];
 }
@@ -83,12 +83,12 @@ function createSignal(initialValue) {
 const original = 1;
 const [count, setCount] = createSignal(original);
 
-console.log('Current count: ', count()); // Expected outcome: “Current count: 1”
+console.log("Current count: ", count()); // Expected outcome: “Current count: 1”
 
 setCount(2);
 
-console.log('And now it is', count()); // Expected outcome: “And now it is 2”
-console.log('The original is the same', original); // Expected outcome: “The original is the same 1”
+console.log("And now it is", count()); // Expected outcome: “And now it is 2”
+console.log("The original is the same", original); // Expected outcome: “The original is the same 1”
 ```
 
 > Note that, due to the fact that we created a new variable within the closure
@@ -110,14 +110,14 @@ function createSignal(initialValue) {
   let value = initialValue;
   const observers = [];
   const getter = (current) => {
-\tif (current && !observers.includes(current)) {
-  \tobservers.push(current);
-\t}
-\treturn value;
+    if (current && !observers.includes(current)) {
+      observers.push(current);
+    }
+    return value;
   };
   const setter = (newValue) => {
-\tvalue = newValue;
-\tobservers.forEach((fn) => fn());
+    value = newValue;
+    observers.forEach((fn) => fn());
   };
   return [getter, setter];
 }

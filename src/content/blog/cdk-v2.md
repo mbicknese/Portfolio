@@ -72,9 +72,9 @@ properly. Create a new JavaScript file `lambda/Hello.js` containing this handler
 ```typescript
 exports.handler = async function (event) {
   return {
-\tstatusCode: 200,
-\theaders: { \"Content-Type\": \"text/plain\" },
-\tbody: `Hello, CDK! You've hit ${event.requestContext.domainName}\
+    statusCode: 200,
+    headers: { \"Content-Type\": \"text/plain\" },
+    body: `Hello, CDK! You've hit ${event.requestContext.domainName}\
 `,
   };
 };
