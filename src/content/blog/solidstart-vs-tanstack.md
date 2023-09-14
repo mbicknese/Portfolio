@@ -83,7 +83,7 @@ that allows developers to inject data into their pages. By doing so, one can set
 up a generic GUI for loading data when changing between pages. A very minimal
 example of this looks like:
 
-```JavaScript
+```javascript
 export function routeData() {
   const [count] = createSignal(4);
   return count;
